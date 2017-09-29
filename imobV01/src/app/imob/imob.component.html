@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="menuTable">
+           <app-imob-list 
+           (imobClicked)="onImobClicked($event)">
+           </app-imob-list>   
+    </div>
+    
+    <div class="details">
+           <app-imob-elem *ngIf="loadImob"
+                [loadImobByIndex]="index">
+           </app-imob-elem>   
+
+         
+    </div>
+</div>

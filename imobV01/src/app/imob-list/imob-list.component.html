@@ -1,0 +1,20 @@
+
+<div class="button-row" align ="left">
+   <button md-raised-button color="primary"
+   (click)="onEditItem(-1)">Adauga apartament</button>
+</div>
+<hr>
+
+<md-list align ="center">
+  <md-list-item 
+    *ngFor="let ap of imob; let i= index"
+    (click)="onEditItem(i)">
+
+    <img mdListAvatar src="https://lh5.ggpht.com/xCBO6ygkHzQ4QSu3iiLlAak0A46V9P-dKJSrVwQIC8e6mnI2Ufrv7tcSB6eXwlTMRE0=w300">
+    
+    <h4 md-line>Apartament cu {{ap.roomsNr}} camere</h4>
+    <p md-line>Pret {{ap.price}}$</p>
+  </md-list-item>
+</md-list>
+<hr>
+  

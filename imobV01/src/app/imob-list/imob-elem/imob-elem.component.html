@@ -1,0 +1,84 @@
+
+<form [formGroup]="imobForm" (ngSubmit)="onSubmit()">
+  <table  cellspacing="10"  align="center">
+    <tr>
+
+      <tr>
+      <td>
+        <div class="imageDiv">
+      <img class ="importedImage" [src]="imgPath.value" >
+      </div> 
+      <div class="title">
+        <span><h1>Apartament cu {{rooms.value}} camere</h1></span>
+      </div>
+      
+      <br><br>
+        <md-form-field class="example-full-width">
+          <input 
+          mdInput 
+          placeholder="Img URL" value="0"
+          formControlName="imgUrl"
+          #imgPath>
+      </md-form-field> 
+         </td>
+      
+      
+      </tr>
+      <tr>
+       <td>
+        <md-form-field >
+          <textarea  
+          mdInput 
+          placeholder="Adresa" value=" "
+          formControlName="address"> </textarea>
+      </md-form-field>
+       </td>
+
+      </tr>
+
+       <tr>
+      
+       
+       </tr>
+      <tr>
+
+      <td>
+        <md-form-field >
+          <input 
+          type="number"
+          mdInput 
+          placeholder="Numar Camere" value="0"
+          formControlName="rooms"
+          #rooms>
+      </md-form-field>
+    
+        <md-form-field >
+        <input 
+        mdInput 
+        type="number"
+        placeholder="Numar Bai"
+        formControlName="baths">
+      </md-form-field>
+        <md-form-field >
+        <input 
+        mdInput 
+        type="number"
+        placeholder="Suprafata"
+        formControlName="surface">
+      </md-form-field>
+        <md-form-field >
+        <input 
+        mdInput 
+        type="number"
+        placeholder="Pret (€)"
+        formControlName="price">
+      </md-form-field></td>
+      
+      
+    </tr>
+  </table>
+
+  <button md-raised-button color="primary" type="submit">Salveaza</button>
+  <button md-raised-button color="red" (click)="onDelete()">Sterge</button>
+</form>
+

@@ -1,0 +1,19 @@
+
+body {
+    background:red;
+}
+
+
+.link{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.spacer{
+  padding-left: 50px;
+}
+
+.space{
+  padding-left: 20px;
+}

@@ -1,0 +1,30 @@
+.example-full-width {
+  width: 100%;
+}
+
+
+.importedImage{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.imageDiv{
+  width: 50%;
+  float:left;
+}
+
+.title{
+  width: 50%;
+  float: right;
+  text-align: left;
+  display: table;
+  height: 100px;
+  
+}
+span {
+  display: table-cell;
+  vertical-align: middle;
+}
+

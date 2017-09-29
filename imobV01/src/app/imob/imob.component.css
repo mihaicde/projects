@@ -1,0 +1,24 @@
+.row{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.menuTable, .details{
+    position:relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left:15px;
+}
+
+.menuTable{
+    padding: 30px;
+    float: left;
+}
+
+
+.details{
+   float: right;
+   
+
+
+}
